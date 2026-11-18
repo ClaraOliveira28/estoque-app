@@ -1,0 +1,25 @@
+export type StatusProduto = 'Em Estoque' | 'Estoque Baixo';
+
+export type Produto = {
+  id: number;
+  nome: string;
+  quantidade: number;
+};
+
+const LIMITE_ESTOQUE_BAIXO = 10;
+
+export function obterStatus(quantidade: number): StatusProduto {
+  if (quantidade <= LIMITE_ESTOQUE_BAIXO) {
+    return 'Estoque Baixo';
+  }
+  return 'Em Estoque';
+}
+
+export const produtosExemplo: Produto[] = [
+  { id: 1, nome: 'Camiseta básica', quantidade: 45 },
+  { id: 2, nome: 'Calça jeans', quantidade: 8 },
+  { id: 3, nome: 'Tênis esportivo', quantidade: 23 },
+  { id: 4, nome: 'Boné preto', quantidade: 4 },
+  { id: 5, nome: 'Meia esportiva', quantidade: 60 },
+  { id: 6, nome: 'Jaqueta corta-vento', quantidade: 10 },
+];
