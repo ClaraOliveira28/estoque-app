@@ -1,0 +1,15 @@
+export const themes = {
+  colors: {
+    primary: '#A78BFA',
+    primaryDark: '#7C3AED',
+    background: '#F3F4F6',
+    surface: '#FFFFFF',
+    text: '#111827',
+    textLight: '#6B7280',
+    border: '#D1D5DB',
+    white: '#FFFFFF',
+    success: '#16A34A',
+    warning: '#F59E0B',
+    danger: '#DC2626',
+  },
+};
